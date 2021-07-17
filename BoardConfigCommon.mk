@@ -185,11 +185,6 @@ TARGET_LD_SHIM_LIBS := \
 # Time service
 BOARD_USES_QC_TIME_SERVICES := true
 
-# TWRP Support
-ifeq ($(WITH_TWRP),true)
--include $(PLATFORM_PATH)/twrp/twrp.mk
-endif
-
 # Vintf
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
